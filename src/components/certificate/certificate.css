@@ -1,0 +1,14 @@
+.carousel-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.certificate__image {
+  width: auto;
+  max-width: 80%; /* Adjust as needed */
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: var(--mb-1);
+}
+
+

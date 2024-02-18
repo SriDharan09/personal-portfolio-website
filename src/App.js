@@ -5,7 +5,11 @@ import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Qualification from "./components/Qualification/Qualification";
 import Project from "./components/projects/Project";
+import Certificate from "./components/certificate/Certificate";
 import { useState } from "react";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+import ScrollUp from "./components/ScrollUp/ScrollUp";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -23,7 +27,13 @@ function App() {
           <Skills />
           <Qualification />
           <Project />
+          <Certificate />
+          <Contact />
+
         </main>
+
+        <Footer/>
+        <ScrollUp/>
       </div>
     </>
   );

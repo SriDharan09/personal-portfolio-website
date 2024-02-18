@@ -106,8 +106,8 @@
 }
 
 /* For small devices */
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .slick-slide img {
     display: none !important;
   }
-}
+} */
