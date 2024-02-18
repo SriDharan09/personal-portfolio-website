@@ -65,9 +65,16 @@
 
 /*=============== BASE ===============*/
 * {
+  transition: all 0.4s ease;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.dark-mode-toggle {
+  background: var(--body-color);
+  border: none;
+  font-size: 2rem;
 }
 
 html {
@@ -186,7 +193,7 @@ img {
     margin: 0 0 var(--header-height) 0;
   }
 
-  .section { 
+  .section {
     padding: 2rem 0 4rem;
   }
 
@@ -208,4 +215,80 @@ img {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+}
+
+/* Dark mode */
+.App.dark-mode {
+  /* transition: all 1s ease; */
+  background-color: #222; /* Example dark mode background color */
+  color: #fff; /* Example dark mode text color */
+  h1,
+  h2,
+  h3,
+  span {
+    color: #fff;
+  }
+  .home__scroll-mouse {
+    --title-color: #fff; /* Set stroke color to white in dark mode */
+  }
+  .uil,
+  .uis,
+  a {
+    color: white; /* Set the color to white */
+  }
+  .about__title {
+    color: black;
+  }
+  .about__subtitle {
+    color: grey;
+  }
+  .dark-mode-toggle {
+    /* transition: all 1s ease; */
+    background-color: #222;
+  }
+
+  .nav__menu {
+    background-color: #222;
+  }
+  p {
+    color: #fff;
+  }
+  .i {
+    color: #fff !important;
+  }
+  .checkbox-label {
+    background-color: #000; /* Set black background color for dark mode */
+  }
+  .header {
+    /* transition: all 1s ease; */
+    background-color: #222; /* Example dark mode background color for header */
+    color: #fff; /* Example dark mode text color for header */
+  }
+  a {
+    color: #fff;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: white !important;
+  }
+  .slick-dots li button:before {
+    color: white !important;
+  }
+}
+
+.dark-mode .checkbox-label {
+  background-color: #222; /* Dark mode background color */
+}
+
+.dark-mode .checkbox-label .ball {
+  background-color: #fff; /* Ball background color in dark mode */
+}
+.App.dark-mode .svg-fill {
+  fill: #fff; /* Example dark mode fill color */
+}
+.App.dark-mode .svg-stroke {
+  stroke: #fff; /* Example dark mode stroke color */
+}
+.App.dark-mode {
+  --container-color: #fff; /* Color for dark mode */
 }

@@ -1,0 +1,123 @@
+.skills__container {
+  padding: 0 50px;
+}
+
+.skills__content {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 4rem;
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+}
+.skills__content:hover {
+  background-color: rgba(223, 223, 223, 0.642);
+}
+.skills__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  cursor: pointer;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* .skills__box {
+  display: flex;
+  justify-content: flex-start;
+} */
+.skills__group {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+/* .skills__data {
+  display: flex;
+  column-gap: 0.5rem;
+} */
+.skills .bx-server,
+.bx-code-block,
+.bxl-product-hunt,
+.bxs-chevrons-down {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  margin-right: 0.25rem;
+}
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+.skills__level {
+  font-size: var(--tiny-font-size);
+  display: block;
+  width: 100%;
+}
+.bxs-chevrons-down {
+  margin-left: 10%;
+}
+
+.progress {
+  position: relative; /* Make sure the progress container is relatively positioned */
+  height: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.progress-percent {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  transform: translate(100%, -100%);
+  font-size: 0.75rem; /* Adjust font size as needed */
+  color: #333; /* Match the color of the progress bar */
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+
+@media screen and (max-width: 768px) {
+  .skills__container {
+    padding: 0 60px;
+  }
+  .dropdown {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .skills__container {
+    padding: 0 30px;
+  }
+  .dropdown {
+    display: inline;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 360px) {
+  .dropdown {
+    display: none;
+  }
+}
