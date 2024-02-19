@@ -1,21 +1,53 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
+import CountUp from "react-countup";
 
 const Info = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const counterRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elementPosition = counterRef.current.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      const activatedScrollPosition = windowHeight - 100;
+
+      if (elementPosition < activatedScrollPosition && !isVisible) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isVisible]);
+
+  //
+
   return (
     <div className="about__info grid">
       <div className="about__box">
-        <h3 className="about__title"> Experince</h3>
-        <span className="about__subtitle"> 8+ Years </span>
+        <span ref={counterRef} className="about__subtitle about__counter">
+          {isVisible && <CountUp end={2} duration={3} />}
+        </span>
+        <h3 className="about__title">Years of coding</h3>
       </div>
 
       <div className="about__box">
-        <h3 className="about__title"> Completed </h3>
-        <span className="about__subtitle"> Projects</span>
+        <span ref={counterRef} className="about__subtitle about__counter">
+          {isVisible && <CountUp end={6} duration={3} />}
+        </span>
+
+        <h3 className="about__title">Completed projects</h3>
       </div>
 
       <div className="about__box">
-        <h3 className="about__title"> Support</h3>
-        <span className="about__subtitle"> 24/7</span>
+        <span ref={counterRef} className="about__subtitle about__counter">
+          {isVisible && <CountUp end={250} duration={3} />}
+        </span>
+
+        <h3 className="about__title">Cups of coffee</h3>
       </div>
     </div>
   );

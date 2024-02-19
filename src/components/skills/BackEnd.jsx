@@ -25,12 +25,12 @@ const BackEnd = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "50%" }} // Adjust width according to skill level
+                    style={{ width: "70%" }} // Adjust width according to skill level
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">50%</span>{" "}
+                  <span className="progress-percent">70%</span>{" "}
                 </div>
               </div>
             </div>
@@ -42,12 +42,12 @@ const BackEnd = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "50%" }} // Adjust width according to skill level
+                    style={{ width: "70%" }} // Adjust width according to skill level
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">50%</span>
+                  <span className="progress-percent">70%</span>
                 </div>
               </div>
             </div>
@@ -59,12 +59,12 @@ const BackEnd = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "50%" }} // Adjust width according to skill level
+                    style={{ width: "80%" }} // Adjust width according to skill level
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">50%</span>
+                  <span className="progress-percent">80%</span>
                 </div>
               </div>
             </div>
@@ -76,12 +76,12 @@ const BackEnd = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "50%" }} // Adjust width according to skill level
+                    style={{ width: "75%" }} // Adjust width according to skill level
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">50%</span>
+                  <span className="progress-percent">75%</span>
                 </div>
               </div>
             </div>
@@ -93,12 +93,12 @@ const BackEnd = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "50%" }} // Adjust width according to skill level
+                    style={{ width: "60%" }} // Adjust width according to skill level
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">50%</span>
+                  <span className="progress-percent">60%</span>
                 </div>{" "}
               </div>
             </div>
@@ -110,12 +110,12 @@ const BackEnd = () => {
                   <div
                     className="progress-bar"
                     role="progressbar"
-                    style={{ width: "50%" }} // Adjust width according to skill level
+                    style={{ width: "90%" }} // Adjust width according to skill level
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">50%</span>
+                  <span className="progress-percent">90%</span>
                 </div>
               </div>
             </div>

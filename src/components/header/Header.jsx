@@ -3,7 +3,11 @@ import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
+import { motion, useScroll } from "framer-motion";
+
 const Header = ({ toggleDarkMode, darkMode }) => {
+  const { scrollYProgress } = useScroll();
+
   // change background
 
   window.addEventListener("scroll", function () {
@@ -16,6 +20,36 @@ const Header = ({ toggleDarkMode, darkMode }) => {
   const [toggle, showMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+
+  // auto active
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sections = document.querySelectorAll("section");
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          setActiveNav(`#${section.id}`);
+        }
+      });
+    };
+
+    handleScroll(); // Initial call to set the initial active section
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  //
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,6 +66,13 @@ const Header = ({ toggleDarkMode, darkMode }) => {
 
   return (
     <>
+      {!isMobile && (
+        <motion.div
+          className="progress-bar"
+          style={{ scaleX: scrollYProgress }}
+        />
+      )}
+
       <div className="header">
         <nav
           className={`nav container ${isMobile && darkMode ? "dark-mode" : ""}`}
@@ -88,31 +129,46 @@ const Header = ({ toggleDarkMode, darkMode }) => {
 
               <li className="nav__item">
                 <a
-                  href="#services"
+                  href="#qualification"
                   className={
-                    activeNav === "#services"
+                    activeNav === "#qualification"
                       ? "nav__link active-link"
                       : "nav__link"
                   }
-                  onClick={() => setActiveNav("#services")}
+                  onClick={() => setActiveNav("#qualification")}
                 >
                   <i className="uil uil-briefcase-alt nav__icon"></i>
-                  Service
+                  Qualification
                 </a>
               </li>
 
               <li className="nav__item">
                 <a
-                  href="#portfolio"
+                  href="#projects"
                   className={
-                    activeNav === "#portfolio"
+                    activeNav === "#projects"
                       ? "nav__link active-link"
                       : "nav__link"
                   }
-                  onClick={() => setActiveNav("#portfolio")}
+                  onClick={() => setActiveNav("#projects")}
                 >
                   <i className="uil uil-scenery nav__icon"></i>
-                  Portfolio
+                  Projects
+                </a>
+              </li>
+
+              <li className="nav__item">
+                <a
+                  href="#certification"
+                  className={
+                    activeNav === "#certification"
+                      ? "nav__link active-link"
+                      : "nav__link"
+                  }
+                  onClick={() => setActiveNav("#certification")}
+                >
+                  <i className="uil uil-scenery nav__icon"></i>
+                  Certifications
                 </a>
               </li>
 
@@ -120,8 +176,8 @@ const Header = ({ toggleDarkMode, darkMode }) => {
                 <a
                   href="#contact"
                   className={
-                    activeNav === "#home"
-                      ? "nav__link active_link"
+                    activeNav === "#contact"
+                      ? "nav__link active-link"
                       : "nav__link"
                   }
                   onClick={() => setActiveNav("#contact")}
@@ -156,6 +212,12 @@ const Header = ({ toggleDarkMode, darkMode }) => {
             <i class="uis uis-list-ui-alt"></i>
           </div>
         </nav>
+        {isMobile && (
+          <motion.div
+            className="progress-bar"
+            style={{ scaleX: scrollYProgress }}
+          />
+        )}
       </div>
     </>
   );

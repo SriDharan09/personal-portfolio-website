@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./qualification.css";
 
 const Qualification = () => {
-  const [toggleState, setToggleState] = useState(0);
+  const [toggleState, setToggleState] = useState(1);
   const toggleTab = (index) => {
     setToggleState(index);
   };
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualification">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personal journey</span>
 
@@ -51,11 +51,11 @@ const Qualification = () => {
               <div>
                 <h3 className="qualification__title">Electronics Engineer</h3>
                 <span className="qualification__subtitle">
-                  St. Xavier's College
+                  Sastra Deemed to be University
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i>
-                  2018 - 2022
+                  2019 - 2023
                 </div>
               </div>
               <div>
@@ -75,11 +75,11 @@ const Qualification = () => {
               <div>
                 <h3 className="qualification__title">HSC</h3>
                 <span className="qualification__subtitle">
-                  i-exceed technologogy solutions
+                  Town Higer Secondary school
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i>
-                  2024 - present
+                  2018 - 2019
                 </div>
               </div>
             </div>
@@ -88,11 +88,11 @@ const Qualification = () => {
               <div>
                 <h3 className="qualification__title">SSLC</h3>
                 <span className="qualification__subtitle">
-                  St. Xavier's College
+                  Vallalar Higher Secondary School
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i>
-                  2018 - 2022
+                  2016 - 2017
                 </div>
               </div>
               <div>

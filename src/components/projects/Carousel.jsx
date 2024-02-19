@@ -30,12 +30,17 @@ const Carousel = () => {
               </p>
 
               <div className="buttons">
-                <button className="btn">
-                  <i className="uil uil-github-alt"></i> &nbsp; Repo
-                </button>
-                <button className="btn">
-                  <i className="uil uil-link-alt"></i> &nbsp; Demo
-                </button>
+                <a href="https://github.com/SriDharan09/Front_End-Ecommerce_Site">
+                  <button className="btn">
+                    <i className="uil uil-github-alt"></i> &nbsp; Repo
+                  </button>
+                </a>
+
+                <a href="https://enchantique-store.netlify.app/">
+                  <button className="btn">
+                    <i className="uil uil-link-alt"></i> &nbsp; Demo
+                  </button>
+                </a>
               </div>
             </div>
             <div className="carousel-image">
@@ -51,12 +56,17 @@ const Carousel = () => {
                 A personal portfolio that I developed using React.
               </p>
               <div className="buttons">
-                <button className="btn">
-                  <i className="uil uil-github-alt"></i> &nbsp; Repo
-                </button>
-                <button className="btn">
-                  <i className="uil uil-link-alt"></i> &nbsp; Demo
-                </button>
+                <a href="https://github.com/SriDharan09/personal-portfolio-website">
+                  <button className="btn">
+                    <i className="uil uil-github-alt"></i> &nbsp; Repo
+                  </button>
+                </a>
+
+                <a href="https://sridhar-kannan.netlify.app">
+                  <button className="btn">
+                    <i className="uil uil-link-alt"></i> &nbsp; Demo
+                  </button>
+                </a>
               </div>
             </div>
             <div className="carousel-image">
@@ -74,9 +84,11 @@ const Carousel = () => {
                 Speech emotion recognition is a machine learning technique that
               </p>
               <div className="buttons">
-                <button className="btn">
-                  <i className="uil uil-github-alt"></i> &nbsp; Repo
-                </button>
+                <a href="https://github.com/SriDharan09/Speech-emotion-Recognition-Deep-learning">
+                  <button className="btn">
+                    <i className="uil uil-github-alt"></i> &nbsp; Repo
+                  </button>
+                </a>
               </div>
             </div>
             <div className="carousel-image">
@@ -96,12 +108,11 @@ const Carousel = () => {
                 algorithms
               </p>
               <div className="buttons">
-                <button className="btn">
-                  <i className="uil uil-github-alt"></i> &nbsp; Repo
-                </button>
-                <button className="btn">
-                  <i className="uil uil-link-alt"></i> &nbsp; Demo
-                </button>
+                <a href="https://github.com/SriDharan09/An-Ensemble-based-MLmodel-for-chronic-disease">
+                  <button className="btn">
+                    <i className="uil uil-github-alt"></i> &nbsp; Repo
+                  </button>
+                </a>
               </div>
             </div>
             <div className="carousel-image">

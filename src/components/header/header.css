@@ -7,6 +7,17 @@
   background-color: var(--body-color);
 }
 
+.progress-bar {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  right: 0;
+  height: 0.5% !important;
+  background: var(--red);
+  transform-origin: 0%;
+  z-index: var(--z-fixed);
+}
+
 .nav {
   height: calc(var(--header-height) + 1.5rem);
   display: flex;
@@ -46,9 +57,20 @@
 
 .active-link,
 .nav__link:hover {
-  color: red;
+  color: #4b54ffa9;
 }
 /* BreakPoints */
+@media screen and (max-width: 1600px) {
+  .progress-bar {
+    top: 9.5%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .progress-bar {
+    top: 11%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     top: initial;
@@ -67,6 +89,15 @@
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.5s;
+  }
+  .progress-bar {
+    position: fixed;
+    top: 92.5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5% !important;
+    transform-origin: 0%;
   }
 
   /* Show Menu  */

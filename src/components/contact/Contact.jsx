@@ -62,16 +62,17 @@ const Contact = () => {
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
-            {/*  */}
+
             <div className="contact__card">
               <i class="bx bx-location-plus contact__card-icon"></i>
 
               <a
-                href="mailto:sridharselvaraj02@gmail.com"
+                href="https://maps.app.goo.gl/TTdZtCNzkiYWdkJY9"
                 className="contact__button "
               >
                 <h3 className="contact__card-title">Location</h3>
-                <span className="contact__card-data">Kumbakonam, 612302</span>
+                <span className="contact__card-data"></span>
+
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>

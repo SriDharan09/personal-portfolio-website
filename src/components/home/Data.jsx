@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import Typed from "typed.js";
 
 const Data = () => {
+  const spanRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: ["Sridhar", "Programmer", "Developer", "Engineer"],
+      typeSpeed: 110, // typing speed in milliseconds
+      backSpeed: 50, // backspacing speed in milliseconds
+      loop: true, // loop the animation infinitely
+    };
+
+    const typed = new Typed(spanRef.current, options);
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div className="home__data">
-      <h1 className="home__title">Sridhar S</h1>
-      <h3 className="home__subtitle">Frontend Developer</h3>
+      <h1 className="home__title">Hi, There</h1>
+      <h3 className="home__subtitle">
+        I'm <span className="auto__type" ref={spanRef}></span>
+      </h3>
 
       <p className="home__description">
-        I'm creative designer based in New York, and I'm very passionate and
-        dedicated to my work.
+        Engineer by profession, coder by passion. Software engineer fueled by
+        coffee and curiosity ☕️💻
       </p>
 
       <a href="#contact" className="button button--flex">

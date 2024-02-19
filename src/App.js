@@ -11,6 +11,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
@@ -19,6 +20,7 @@ function App() {
   };
   return (
     <>
+     
       <div className={`App ${darkMode ? "dark-mode" : ""}`}>
         <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <main className="main">
@@ -29,11 +31,10 @@ function App() {
           <Project />
           <Certificate />
           <Contact />
-
         </main>
 
-        <Footer/>
-        <ScrollUp/>
+        <Footer />
+        <ScrollUp />
       </div>
     </>
   );

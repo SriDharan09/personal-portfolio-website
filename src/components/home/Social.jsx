@@ -4,7 +4,7 @@ const Social = () => {
   return (
     <div className="home__social">
       <a
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/s.r.i_dhar?igsh=b216djVyZ3M5djZu"
         className="home__social-icon"
         target="_blank"
         rel="noopener noreferrer"
@@ -12,7 +12,7 @@ const Social = () => {
         <i class="uil uil-instagram"></i>
       </a>
       <a
-        href="https://github.com/"
+        href="https://github.com/SriDharan09/"
         className="home__social-icon"
         target="_blank"
         rel="noopener noreferrer"
@@ -20,7 +20,7 @@ const Social = () => {
         <i class="uil uil-github-alt"></i>
       </a>
       <a
-        href="https://dribbble.com/"
+        href="https://www.linkedin.com/in/sridhars9/"
         className="home__social-icon"
         target="_blank"
         rel="noopener noreferrer"
@@ -28,12 +28,12 @@ const Social = () => {
         <i class="uil uil-linkedin-alt"></i>
       </a>
       <a
-        href="https://dribbble.com/"
+        href="https://www.facebook.com/sridhar.kannan.3994?mibextid=ZbWKwL"
         className="home__social-icon"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="uil uil-facebook"></i>
+        <i class="uit uit-facebook-f"></i>
       </a>
     </div>
   );

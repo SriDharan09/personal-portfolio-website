@@ -19,7 +19,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#Qualification" className="footer__link">
+            <a href="#qualification" className="footer__link">
               Qualification
             </a>
           </li>
@@ -27,7 +27,7 @@ const Footer = () => {
 
         <div className="footer__social">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/s.r.i_dhar?igsh=b216djVyZ3M5djZu"
             className="footer__social-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +35,7 @@ const Footer = () => {
             <i class="bx bxl-instagram"></i>
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/SriDharan09/"
             className="footer__social-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -43,15 +43,15 @@ const Footer = () => {
             <i class="bx bxl-github"></i>
           </a>
           <a
-            href="https://dribbble.com/"
+            href="https://www.linkedin.com/in/sridhars9/"
             className="footer__social-link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="bx bxl-dribbble"></i>
+            <i class="bx bxl-linkedin"></i>
           </a>
           <a
-            href="https://dribbble.com/"
+            href="https://www.facebook.com/sridhar.kannan.3994?mibextid=ZbWKwL"
             className="footer__social-link"
             target="_blank"
             rel="noopener noreferrer"

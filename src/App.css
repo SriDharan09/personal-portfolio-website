@@ -50,6 +50,11 @@
   --z-modal: 1000;
 }
 
+.App {
+  /* Other styles */
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
 /* Responsive typography */
 @media screen and (max-width: 992px) {
   :root {
@@ -63,9 +68,9 @@
   }
 }
 
+
 /*=============== BASE ===============*/
 * {
-  transition: all 0.4s ease;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -220,34 +225,68 @@ img {
 /* Dark mode */
 .App.dark-mode {
   /* transition: all 1s ease; */
+  transition: background-color 0.5s ease, color 0.5s ease;
+
   background-color: #222; /* Example dark mode background color */
   color: #fff; /* Example dark mode text color */
+
   h1,
   h2,
   h3,
-  span {
+  .home__scroll-name,
+  .about__title,
+  .progress-percent,
+  .qualification__button,
+  .qualification__line,
+  .contact__card-icon,
+  .footer__copy {
     color: #fff;
+  }
+  .skills__content:hover {
+    background-color: rgba(73, 73, 73, 0.734);
+  }
+  .progress-bar {
+    background-color: rgba(255, 224, 48, 0.905);
+  }
+  .active-link,
+  .nav__link:hover {
+    color: gold;
+  }
+
+  .about__box,
+  .skills__content,
+  .contact__card {
+    background-color: var(--container-color-dark); /* Dark background color */
+    border: 1px solid rgba(255, 255, 255, 0.438); /* Light border color */
+  }
+
+  .auto__type {
+    color: gold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
   }
   .home__scroll-mouse {
     --title-color: #fff; /* Set stroke color to white in dark mode */
   }
   .uil,
   .uis,
-  a {
+  a,
+  .bx {
     color: white; /* Set the color to white */
   }
-  .about__title {
+
+  .about__counter {
     color: black;
   }
   .about__subtitle {
-    color: grey;
+    color: rgba(201, 201, 201, 0.925);
   }
   .dark-mode-toggle {
     /* transition: all 1s ease; */
     background-color: #222;
   }
 
-  .nav__menu {
+  .nav__menu,
+  .contact__form-tag {
     background-color: #222;
   }
   p {
@@ -273,6 +312,10 @@ img {
   }
   .slick-dots li button:before {
     color: white !important;
+  }
+
+  .footer {
+    background-color: #0f0f0f7e;
   }
 }
 

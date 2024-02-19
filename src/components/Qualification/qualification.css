@@ -7,7 +7,9 @@
   justify-content: center;
   margin-bottom: var(--mb-2);
 }
-
+.uil-calendar-alt {
+  margin-right: 5px;
+}
 .qualification__button {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);

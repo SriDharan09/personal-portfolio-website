@@ -3,6 +3,7 @@
   width: 450px;
   height: auto;
   justify-self: center;
+  border-radius: 15px;
 }
 .about__container {
   grid-template-columns: repeat(2, 1fr);
@@ -32,7 +33,8 @@
   font-size: 0.8rem;
 }
 .about__description {
-  padding: 0 4rem 0 0;
+  padding: 0 2rem 0 0;
+  text-align: justify;
   margin-bottom: var(--mb-2-5);
 }
 
