@@ -68,7 +68,6 @@
   }
 }
 
-
 /*=============== BASE ===============*/
 * {
   margin: 0;
@@ -163,6 +162,7 @@ img {
 
 .button:hover {
   background-color: var(--title-color-dark);
+  transition: background-color 0.5s ease-in-out;
 }
 
 .button__icon {
@@ -242,15 +242,35 @@ img {
   .footer__copy {
     color: #fff;
   }
+  .contact__card:hover {
+    background-color: #3b3b3b49;
+  }
+
+  .home__scroll-name:hover {
+    color: gold;
+  }
+
   .skills__content:hover {
     background-color: rgba(73, 73, 73, 0.734);
   }
+  .footer__link:hover,
+  .home__social-icon:hover {
+    color: gold;
+  }
+
   .progress-bar {
     background-color: rgba(255, 224, 48, 0.905);
   }
   .active-link,
   .nav__link:hover {
     color: gold;
+  }
+  .nav__logo:hover {
+    color: gold;
+    transform: scale(1.1);
+  }
+  .nav__logo::before {
+    background-color: rgba(255, 255, 255, 0.749);
   }
 
   .about__box,
@@ -267,7 +287,7 @@ img {
   .home__scroll-mouse {
     --title-color: #fff; /* Set stroke color to white in dark mode */
   }
-  .uil,
+
   .uis,
   a,
   .bx {

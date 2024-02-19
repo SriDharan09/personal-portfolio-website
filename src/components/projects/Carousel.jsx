@@ -2,12 +2,16 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import portfolio from "../../local_assets/portfolio.jpg";
+import profileLight from "../../local_assets/profile-light.jpg";
+import profileDark from "../../local_assets/profile-dark.jpg";
+
 import webpage from "../../local_assets/webpage_enchantique.jpg";
 import project1 from "../../local_assets/project1.png";
 import project2 from "../../local_assets/project2.jpeg";
 
-const Carousel = () => {
+const Carousel = ({ toggleDarkMode, darkMode }) => {
+  const image = darkMode ? profileLight : profileDark;
+
   const settings = {
     dots: true,
     infinite: true,
@@ -70,7 +74,7 @@ const Carousel = () => {
               </div>
             </div>
             <div className="carousel-image">
-              <img src={portfolio} className="project__image" alt="project 2" />
+              <img src={image} className="project__image" alt="project 2" />
             </div>
           </div>
         </div>

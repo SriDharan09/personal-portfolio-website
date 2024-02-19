@@ -44,10 +44,10 @@ const Info = () => {
 
       <div className="about__box">
         <span ref={counterRef} className="about__subtitle about__counter">
-          {isVisible && <CountUp end={250} duration={3} />}
+          {isVisible && <CountUp end={2} duration={3} />}
         </span>
 
-        <h3 className="about__title">Cups of coffee</h3>
+        <h3 className="about__title">Certification & Courses</h3>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@
   margin-bottom: var(--mb-2);
 }
 .footer__link:hover {
-  color: var(--title-color-dark);
+  color: #4b54ffa9
 }
 .footer__list {
   display: flex;
@@ -36,7 +36,7 @@
   display: inline-flex;
 }
 .footer__social-link:hover {
-  background-color: var(--title-color-dark);
+  background-color: #4b54ffa9;
 }
 .footer__copy {
   display: block;

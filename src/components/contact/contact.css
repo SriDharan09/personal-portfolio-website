@@ -63,8 +63,11 @@
   font-size: 1rem;
   transition: 0.3s;
 }
+.contact__card:hover {
+  background-color: #e8e8e87d;
+}
 .contact__button:hover {
-  transform: translate(0.25rem);
+  transform: translate(0.5rem);
 }
 .contact__form {
   width: 360px;

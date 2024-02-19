@@ -7,8 +7,8 @@ const FrontEnd = () => {
     setDropDownVisible(!isDropDownVisible);
   };
   return (
-    <div className="skills__content">
-      <h3 className="skills__title" onClick={toggleDropDown}>
+    <div className="skills__content " onClick={toggleDropDown}>
+      <h3 className="skills__title" >
         <i class="bx bx-code-block"></i> Frontend
         <div className="dropdown">
           <i class="bx bxs-chevrons-down"></i>

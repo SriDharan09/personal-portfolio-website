@@ -33,12 +33,11 @@ const Contact = () => {
 
           <div className="contact__info">
             <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
-
               <a
                 href="mailto:sridharselvaraj02@gmail.com"
                 className="contact__button"
               >
+                <i className="bx bx-mail-send contact__card-icon"></i>
                 <h3 className="contact__card-title">Email</h3>
                 <span className="contact__card-data"></span>
 
@@ -48,14 +47,13 @@ const Contact = () => {
 
             {/*  */}
             <div className="contact__card">
-              <i className="bx bxl-whatsapp contact__card-icon"></i>
-
               {/*eslint-disable-next-line */}
               <a
                 href="https://api.whatsapp.com/send?phone=6382600641&text=Hola Sri!! i visited your website and i would like to get in touch with you."
                 className="contact__button "
                 target="_blank"
               >
+                <i className="bx bxl-whatsapp contact__card-icon"></i>
                 <h3 className="contact__card-title">WhatsApp</h3>
                 <span className="contact__card-data"></span>
 
@@ -64,12 +62,12 @@ const Contact = () => {
             </div>
 
             <div className="contact__card">
-              <i class="bx bx-location-plus contact__card-icon"></i>
 
               <a
                 href="https://maps.app.goo.gl/TTdZtCNzkiYWdkJY9"
                 className="contact__button "
               >
+              <i class="bx bx-location-plus contact__card-icon"></i>
                 <h3 className="contact__card-title">Location</h3>
                 <span className="contact__card-data"></span>
 
