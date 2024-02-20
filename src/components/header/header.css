@@ -111,6 +111,7 @@ a:hover::before {
     transition: 0.5s;
   }
   .progress-bar {
+    height: 4px;
     bottom: 0;
     top: auto;
   }
