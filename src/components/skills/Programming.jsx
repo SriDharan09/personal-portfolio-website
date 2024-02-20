@@ -23,7 +23,7 @@ const Programming = () => {
                 <h3 className="skills__name">C</h3>
                 <div className="progress">
                   <div
-                    className="progress-bar"
+                    className="progressBar"
                     role="progressbar"
                     style={{ width: "70%" }} // Adjust width according to skill level
                     aria-valuenow="50"
@@ -40,7 +40,7 @@ const Programming = () => {
                 <h3 className="skills__name">C++</h3>
                 <div className="progress">
                   <div
-                    className="progress-bar"
+                    className="progressBar"
                     role="progressbar"
                     style={{ width: "70%" }} // Adjust width according to skill level
                     aria-valuenow="50"
@@ -57,7 +57,7 @@ const Programming = () => {
                 <h3 className="skills__name">Python</h3>
                 <div className="progress">
                   <div
-                    className="progress-bar"
+                    className="progressBar"
                     role="progressbar"
                     style={{ width: "90%" }} // Adjust width according to skill level
                     aria-valuenow="50"

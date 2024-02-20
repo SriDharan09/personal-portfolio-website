@@ -25,7 +25,7 @@ function App() {
           <Home />
           <About />
           <Skills />
-          <Qualification />
+          <Qualification darkMode={darkMode} />
           <Project toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
           <Certificate />
           <Contact />

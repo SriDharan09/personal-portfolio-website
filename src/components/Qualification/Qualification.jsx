@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./qualification.css";
 
-const Qualification = () => {
+const Qualification = ({ darkMode }) => {
   const [toggleState, setToggleState] = useState(1);
+  const [pulseTab, setPulseTab] = useState(2);
+
   const toggleTab = (index) => {
-    setToggleState(index);
+    if (index !== toggleState) {
+      setToggleState(index);
+      setPulseTab(index === 1 ? 2 : 1); // Update pulseTab based on toggled index
+    }
   };
+
+  useEffect(() => {
+    // Set pulseTab to the default tab (Experience) when the component mounts
+    console.log("Setting pulseTab to 2");
+    setPulseTab(2);
+  }, []);
 
   return (
     <section className="qualification section" id="qualification">
@@ -17,8 +28,10 @@ const Qualification = () => {
           <div
             className={
               toggleState === 1
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
+                ? `qualification__button qualification__active button--flex `
+                : `qualification__button button--flex ${
+                    pulseTab === 1 && darkMode ? "pulse-dark" : "pulse"
+                  }`
             }
             onClick={() => toggleTab(1)}
           >
@@ -29,8 +42,10 @@ const Qualification = () => {
           <div
             className={
               toggleState === 2
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
+                ? `qualification__button qualification__active button--flex`
+                : `qualification__button button--flex ${
+                    pulseTab === 2 && darkMode ? "pulse-dark" : "pulse"
+                  }`
             }
             onClick={() => toggleTab(2)}
           >

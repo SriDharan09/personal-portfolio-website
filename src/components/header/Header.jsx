@@ -3,10 +3,10 @@ import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
-// import { motion, useScroll } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const Header = ({ toggleDarkMode, darkMode }) => {
-  // const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll();
 
   // change background
 
@@ -66,12 +66,12 @@ const Header = ({ toggleDarkMode, darkMode }) => {
 
   return (
     <>
-      {/* {!isMobile && (
+      {!isMobile && (
         <motion.div
           className="progress-bar"
           style={{ scaleX: scrollYProgress }}
         />
-      )} */}
+      )}
 
       <div className="header">
         <nav
@@ -212,12 +212,12 @@ const Header = ({ toggleDarkMode, darkMode }) => {
             <i class="uis uis-list-ui-alt"></i>
           </div>
         </nav>
-        {/* {isMobile && (
+        {isMobile && (
           <motion.div
             className="progress-bar"
             style={{ scaleX: scrollYProgress }}
           />
-        )} */}
+        )}
       </div>
     </>
   );

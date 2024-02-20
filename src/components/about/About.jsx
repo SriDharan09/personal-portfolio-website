@@ -4,7 +4,6 @@ import video from "../../local_assets/profile.mp4";
 import Info from "./Info";
 import cv from "../../local_assets/cv.pdf";
 
-
 const About = () => {
 
   

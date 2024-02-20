@@ -23,7 +23,7 @@ const FrontEnd = () => {
                 <h3 className="skills__name">HTML</h3>
                 <div className="progress">
                   <div
-                    className="progress-bar"
+                    className="progressBar"
                     role="progressbar"
                     style={{ width: "100%" }} // Adjust width according to skill level
                     aria-valuenow="50"
@@ -40,7 +40,7 @@ const FrontEnd = () => {
                 <h3 className="skills__name">CSS</h3>
                 <div className="progress">
                   <div
-                    className="progress-bar"
+                    className="progressBar"
                     role="progressbar"
                     style={{ width: "80%" }} // Adjust width according to skill level
                     aria-valuenow="50"
@@ -57,7 +57,7 @@ const FrontEnd = () => {
                 <h3 className="skills__name">JS</h3>
                 <div className="progress">
                   <div
-                    className="progress-bar"
+                    className="progressBar"
                     role="progressbar"
                     style={{ width: "90%" }} // Adjust width according to skill level
                     aria-valuenow="50"
@@ -74,7 +74,7 @@ const FrontEnd = () => {
                 <h3 className="skills__name">React.js</h3>
                 <div className="progress">
                   <div
-                    className="progress-bar"
+                    className="progressBar"
                     role="progressbar"
                     style={{ width: "70%" }} // Adjust width according to skill level
                     aria-valuenow="50"
@@ -91,7 +91,7 @@ const FrontEnd = () => {
                 <h3 className="skills__name">Bootstarp</h3>
                 <div className="progress">
                   <div
-                    className="progress-bar"
+                    className="progressBar"
                     role="progressbar"
                     style={{ width: "75%" }} // Adjust width according to skill level
                     aria-valuenow="50"
@@ -108,7 +108,7 @@ const FrontEnd = () => {
                 <h3 className="skills__name">jQuery</h3>
                 <div className="progress">
                   <div
-                    className="progress-bar"
+                    className="progressBar"
                     role="progressbar"
                     style={{ width: "80%" }} // Adjust width according to skill level
                     aria-valuenow="50"

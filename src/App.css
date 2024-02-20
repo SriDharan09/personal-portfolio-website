@@ -258,6 +258,7 @@ img {
     color: gold;
   }
 
+  .progressBar,
   .progress-bar {
     background-color: rgba(255, 224, 48, 0.905);
   }
