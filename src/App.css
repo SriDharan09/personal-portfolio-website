@@ -162,6 +162,7 @@ img {
 
 .button:hover {
   background-color: var(--title-color-dark);
+  transform: translate(0, -5px);
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -266,11 +267,13 @@ img {
   .nav__link:hover {
     color: gold;
   }
-  .nav__logo:hover {
+  .nav__logo:hover,
+  .footer__title:hover {
     color: gold;
     transform: scale(1.1);
   }
-  .nav__logo::before {
+  .nav__logo::before,
+  .footer__title::before {
     background-color: rgba(255, 255, 255, 0.749);
   }
 
@@ -288,8 +291,19 @@ img {
   .home__scroll-mouse {
     --title-color: #fff; /* Set stroke color to white in dark mode */
   }
+  .active__title,
+  .success-popup__name {
+    color: gold;
+  }
+  .contact__form-input {
+    color: white;
+  }
+  .qualification__subtitle > a:hover {
+    color: gold;
+  }
 
   .uis,
+  .uil-angle-down,
   a,
   .bx {
     color: white; /* Set the color to white */
@@ -334,25 +348,50 @@ img {
   .slick-dots li button:before {
     color: white !important;
   }
+  .show-header {
+    box-shadow: 0 0px 6px rgba(180, 171, 171, 0.64);
+  }
 
   .footer {
     background-color: #0f0f0f7e;
   }
 }
 
-.dark-mode .checkbox-label {
-  background-color: #222; /* Dark mode background color */
+/* .waste {
+  .dark-mode .checkbox-label {
+    background-color: #222;
+  }
+
+  .dark-mode .checkbox-label .ball {
+    background-color: #fff;
+  }
+  .App.dark-mode .svg-fill {
+    fill: #fff;
+  }
+  .App.dark-mode .svg-stroke {
+    stroke: #fff;
+  }
+  .App.dark-mode {
+    --container-color: #fff;
+  }
+} */
+
+html.lenis {
+  height: auto;
 }
 
-.dark-mode .checkbox-label .ball {
-  background-color: #fff; /* Ball background color in dark mode */
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
 }
-.App.dark-mode .svg-fill {
-  fill: #fff; /* Example dark mode fill color */
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
 }
-.App.dark-mode .svg-stroke {
-  stroke: #fff; /* Example dark mode stroke color */
+
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
-.App.dark-mode {
-  --container-color: #fff; /* Color for dark mode */
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

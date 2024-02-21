@@ -7,10 +7,16 @@ const BackEnd = () => {
     setDropDownVisible(!isDropDownVisible);
   };
   return (
-    <div className="skills__content" onClick={toggleDropDown} >
-      <h3 className="skills__title" >
+    <div className="skills__content" onClick={toggleDropDown}>
+      <h3
+        className={`skills__title ${isDropDownVisible ? "active__title" : ""}`}
+      >
         <i class="bx bx-server"></i>Backend
-        <div className="dropdown">
+        <div
+          className={`dropdown ${
+            isDropDownVisible ? "rotate-icon rotated" : "rotate-icon"
+          }`}
+        >
           <i class="bx bxs-chevrons-down" onClick={toggleDropDown}></i>
         </div>
       </h3>

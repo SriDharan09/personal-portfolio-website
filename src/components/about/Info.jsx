@@ -29,14 +29,18 @@ const Info = () => {
     <div className="about__info grid">
       <div className="about__box">
         <span ref={counterRef} className="about__subtitle about__counter">
-          {isVisible && <CountUp end={2} duration={3} />}
+          {isVisible && (
+            <CountUp end={2} duration={3} start={100} suffix=" + " />
+          )}
         </span>
         <h3 className="about__title">Years of coding</h3>
       </div>
 
       <div className="about__box">
         <span ref={counterRef} className="about__subtitle about__counter">
-          {isVisible && <CountUp end={6} duration={3} />}
+          {isVisible && (
+            <CountUp end={6} duration={3} start={100} suffix=" + " />
+          )}
         </span>
 
         <h3 className="about__title">Completed projects</h3>
@@ -44,7 +48,9 @@ const Info = () => {
 
       <div className="about__box">
         <span ref={counterRef} className="about__subtitle about__counter">
-          {isVisible && <CountUp end={2} duration={3} />}
+          {isVisible && (
+            <CountUp end={2} duration={3} start={100} suffix=" + " />
+          )}
         </span>
 
         <h3 className="about__title">Certification & Courses</h3>

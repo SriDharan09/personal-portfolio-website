@@ -8,9 +8,15 @@ const FrontEnd = () => {
   };
   return (
     <div className="skills__content " onClick={toggleDropDown}>
-      <h3 className="skills__title" >
+      <h3
+        className={`skills__title ${isDropDownVisible ? "active__title" : ""}`}
+      >
         <i class="bx bx-code-block"></i> Frontend
-        <div className="dropdown">
+        <div
+          className={`dropdown ${
+            isDropDownVisible ? "rotate-icon rotated" : "rotate-icon"
+          }`}
+        >
           <i class="bx bxs-chevrons-down"></i>
         </div>
       </h3>

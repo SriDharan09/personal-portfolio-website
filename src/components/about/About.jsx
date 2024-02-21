@@ -1,15 +1,46 @@
-import React from "react";
+import { ReactLenis } from "@studio-freight/react-lenis";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react";
+
 import "./about.css";
 import video from "../../local_assets/profile.mp4";
 import Info from "./Info";
 import cv from "../../local_assets/cv.pdf";
 
-const About = () => {
+gsap.registerPlugin(ScrollTrigger);
 
-  
+
+const About = () => {
+  const triggerRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.fromTo(
+      triggerRef.current,
+      { opacity: 0, y: 50 },
+      {
+        duration: 1,
+        opacity: 1,
+        y: 0,
+        scrollTrigger: {
+          trigger: triggerRef.current,
+          start: "top center",
+          end: "65% 80%",
+          scrub: true,
+          // snap: 1 / 6,
+          // markers: true,
+        },
+      }
+    );
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
   return (
     <>
-      <section className="about section" id="about">
+    <ReactLenis root>
+      <section ref={triggerRef} id="about" className="about section">
         <h2 className="section__title">About Me</h2>
         <span className="section__subtitle">My introduction</span>
         <div className="about__container container grid">
@@ -59,6 +90,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      </ReactLenis>
     </>
   );
 };

@@ -66,6 +66,12 @@
   /* Adjusted align-self */
   align-self: center;
 }
+.qualification__subtitle > a {
+  color: var(--text-color);
+}
+.qualification__subtitle > a:hover {
+  color: #4b54ff84;
+}
 
 .qualification__line {
   display: block;
@@ -110,7 +116,6 @@
 .pulse-dark {
   animation: pulse-dark 1s infinite ease-in-out;
 }
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */

@@ -66,7 +66,7 @@ const Carousel = ({ toggleDarkMode, darkMode }) => {
                   </button>
                 </a>
 
-                <a href="https://sridhar-kannan.netlify.app">
+                <a href="https://sridhar-portfolio-site.netlify.app/">
                   <button className="btn">
                     <i className="uil uil-link-alt"></i> &nbsp; Demo
                   </button>
@@ -86,6 +86,7 @@ const Carousel = ({ toggleDarkMode, darkMode }) => {
               </h2>
               <p className="section__subtitle">
                 Speech emotion recognition is a machine learning technique that
+                recognise the emotions in the voice.
               </p>
               <div className="buttons">
                 <a href="https://github.com/SriDharan09/Speech-emotion-Recognition-Deep-learning">

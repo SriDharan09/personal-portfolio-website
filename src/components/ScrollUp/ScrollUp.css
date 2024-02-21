@@ -12,6 +12,18 @@
 
 .scrollup:hover {
   background-color: var(--title-color-dark);
+  animation: up 0.8s ease-in-out infinite;
+}
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .scrollup__icon {

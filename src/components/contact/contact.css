@@ -77,6 +77,12 @@
   margin-bottom: var(--mb-2);
   height: 4rem;
 }
+.success-popup__name {
+  color: red;
+}
+.contact_button {
+  margin-bottom: 15px;
+}
 .contact__form-input {
   position: absolute;
   top: 0;
@@ -85,7 +91,7 @@
   height: 100%;
   border: 2px solid rgba(0, 0, 0, 0.2);
   background: none;
-  color: var(--text-color);
+  color: black;
   outline: none;
   border-radius: 0.75rem;
   padding: 1.5rem;

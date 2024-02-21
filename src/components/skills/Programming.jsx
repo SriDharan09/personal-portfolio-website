@@ -7,10 +7,17 @@ const Programming = () => {
     setDropDownVisible(!isDropDownVisible);
   };
   return (
-    <div className="skills__content" onClick={toggleDropDown}>
-      <h3 className="skills__title" >
+    <div className="skills__content">
+      <h3
+        className={`skills__title ${isDropDownVisible ? "active__title" : ""}`}
+        onClick={toggleDropDown}
+      >
         <i class="bx bxl-product-hunt"></i> Programming
-        <div className="dropdown" onClick={toggleDropDown}>
+        <div
+          className={`dropdown ${
+            isDropDownVisible ? "rotate-icon rotated" : "rotate-icon"
+          }`}
+        >
           <i class="bx bxs-chevrons-down"></i>
         </div>
       </h3>
