@@ -8,8 +8,8 @@ import "./contact.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+  // Scroll to reveal Animation
   const triggerRef = useRef(null);
-
   useEffect(() => {
     const tl = gsap.fromTo(
       triggerRef.current,
@@ -33,6 +33,7 @@ const Contact = () => {
     };
   }, []);
 
+  // Name State for display popup message
   const [name, setName] = useState("");
   const SuccessPopup = ({ name }) => (
     <div className="success-popup">
@@ -43,12 +44,12 @@ const Contact = () => {
     </div>
   );
 
+  // isSubmitted for display popup msg
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  console.log(name);
 
   const form = useRef();
 
+  // Email.js for Send Email to me
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -72,6 +73,8 @@ const Contact = () => {
         <span className="section__subtitle">Contact Me</span>
 
         <div className="contact__container container grid">
+
+          {/* Contact Links  */}
           <div className="contact__content">
             <h3 className="contact__title">Talk to me</h3>
 
@@ -119,6 +122,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
+
+          {/* Contact Form  */}
           <div className="contact__content">
             <h3 className="contact__title">Write me a message</h3>
             <form ref={form} onSubmit={sendEmail} className="contact__form">
@@ -188,6 +194,7 @@ const Contact = () => {
               {isSubmitted && <SuccessPopup name={name} />}{" "}
             </form>
           </div>
+    
         </div>
       </section>
     </ReactLenis>

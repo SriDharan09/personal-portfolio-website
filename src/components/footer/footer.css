@@ -1,3 +1,5 @@
+/* Footer Hover Effect start*/
+
 .footer__title {
   position: relative;
 
@@ -29,7 +31,7 @@
   transform: scale(1.2);
 }
 
-/*  */
+/* Footer Hover Effect end */
 
 .footer {
   background-color: var(--container-color);
@@ -77,6 +79,7 @@
   text-align: center;
   font-size: var(--smaller-font-size);
 }
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */

@@ -305,7 +305,8 @@ img {
   .uis,
   .uil-angle-down,
   a,
-  .bx {
+  .bx,
+  .uil-times {
     color: white; /* Set the color to white */
   }
 
@@ -354,6 +355,9 @@ img {
 
   .footer {
     background-color: #0f0f0f7e;
+  }
+  .word.nav__logoo span:hover {
+    color: gold;
   }
 }
 

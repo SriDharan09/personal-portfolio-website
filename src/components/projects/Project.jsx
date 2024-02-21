@@ -8,7 +8,9 @@ import React, { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// props used for the carousel image to toggle btw dark and light mode
 const Project = ({ toggleDarkMode, darkMode }) => {
+  // Scroll to reveal Animation
   const triggerRef = useRef(null);
 
   useEffect(() => {
@@ -34,6 +36,7 @@ const Project = ({ toggleDarkMode, darkMode }) => {
       tl.kill();
     };
   }, []);
+  // Scroll animation end
 
   return (
     <ReactLenis root>

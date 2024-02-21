@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./ScrollUp.css";
 
 const ScrollUp = () => {
+
+  // Scroll Up Button 
   useEffect(() => {
     const handleScroll = () => {
       if (typeof window !== "undefined") {

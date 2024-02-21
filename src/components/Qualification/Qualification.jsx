@@ -7,8 +7,8 @@ import "./qualification.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const Qualification = ({ darkMode }) => {
+  // Scroll to reveal Animation
   const triggerRef = useRef(null);
-
   useEffect(() => {
     const tl = gsap.fromTo(
       triggerRef.current,
@@ -33,9 +33,13 @@ const Qualification = ({ darkMode }) => {
   }, []);
   // Scroll animation end
 
+  // Toggle btw education and experience
   const [toggleState, setToggleState] = useState(1);
+
+  // for pulsing effect to capture the state
   const [pulseTab, setPulseTab] = useState(2);
 
+  // Based on index, toggle the tab
   const toggleTab = (index) => {
     if (index !== toggleState) {
       setToggleState(index);
@@ -43,6 +47,7 @@ const Qualification = ({ darkMode }) => {
     }
   };
 
+  //  on load set the default tab as toggle 2 (experience)
   useEffect(() => {
     // Set pulseTab to the default tab (Experience) when the component mounts
     console.log("Setting pulseTab to 2");
@@ -60,7 +65,9 @@ const Qualification = ({ darkMode }) => {
         <span className="section__subtitle">My personal journey</span>
 
         <div className="qualification__container container">
+          {/* Education and Experience title [toggle and pulse animation] */}
           <div className="qualification__tabs">
+            {/* Education */}
             <div
               className={
                 toggleState === 1
@@ -75,6 +82,7 @@ const Qualification = ({ darkMode }) => {
               Education
             </div>
 
+            {/* Experience */}
             <div
               className={
                 toggleState === 2
@@ -90,6 +98,7 @@ const Qualification = ({ darkMode }) => {
             </div>
           </div>
 
+          {/* Education section  */}
           <div className="qualification__sections">
             <div
               className={
@@ -98,6 +107,7 @@ const Qualification = ({ darkMode }) => {
                   : "qualification__content"
               }
             >
+              {/* clg */}
               <div className="qualification__data">
                 <div>
                   <h3 className="qualification__title">Electronics Engineer</h3>
@@ -125,6 +135,7 @@ const Qualification = ({ darkMode }) => {
                   <span className="qualification__line"></span>
                 </div>
 
+                {/* HSC */}
                 <div>
                   <h3 className="qualification__title">HSC</h3>
                   <span className="qualification__subtitle">
@@ -139,6 +150,7 @@ const Qualification = ({ darkMode }) => {
                 </div>
               </div>
 
+              {/* SSLC */}
               <div className="qualification__data">
                 <div>
                   <h3 className="qualification__title">SSLC</h3>
@@ -168,6 +180,7 @@ const Qualification = ({ darkMode }) => {
                   : "qualification__content"
               }
             >
+              {/* Software Engineer */}
               <div className="qualification__data">
                 <div>
                   <h3 className="qualification__title">Software Engineer</h3>
@@ -186,7 +199,9 @@ const Qualification = ({ darkMode }) => {
                 </div>
               </div>
 
-              <div className="qualification__data">
+
+              {/* in-case of adding new experience */}
+              {/* <div className="qualification__data">
                 <div>
                   <span className="qualification__title"></span>
                   <span className="qualification__subtitle"></span>
@@ -197,7 +212,9 @@ const Qualification = ({ darkMode }) => {
                     <span className="qualification__line"></span>
                   </span>
                 </div>
-              </div>
+              </div> */}
+
+              
             </div>
           </div>
         </div>

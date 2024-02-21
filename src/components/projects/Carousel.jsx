@@ -10,8 +10,10 @@ import project1 from "../../local_assets/project1.png";
 import project2 from "../../local_assets/project2.jpeg";
 
 const Carousel = ({ toggleDarkMode, darkMode }) => {
+  // Toggle btw light and dark mode images
   const image = darkMode ? profileLight : profileDark;
 
+  // Settings for Auto Play Carousel
   const settings = {
     dots: true,
     infinite: true,
@@ -21,9 +23,11 @@ const Carousel = ({ toggleDarkMode, darkMode }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
   return (
     <div className="carousel-container">
       <Slider {...settings}>
+        {/* Slide 1 E-commerce */}
         <div className="carousel-slide">
           <div className="project__container">
             <div className="carousel-content">
@@ -52,6 +56,8 @@ const Carousel = ({ toggleDarkMode, darkMode }) => {
             </div>
           </div>
         </div>
+
+        {/* Slide 2 Personal Portfolio */}
         <div className="carousel-slide">
           <div className="project__container">
             <div className="carousel-content">
@@ -78,6 +84,8 @@ const Carousel = ({ toggleDarkMode, darkMode }) => {
             </div>
           </div>
         </div>
+
+        {/* Slide 3 Speech emotion */}
         <div className="carousel-slide">
           <div className="project__container">
             <div className="carousel-content">
@@ -102,6 +110,7 @@ const Carousel = ({ toggleDarkMode, darkMode }) => {
           </div>
         </div>
 
+        {/* Slide 4 Ensemble chronic disease */}
         <div className="carousel-slide">
           <div className="project__container">
             <div className="carousel-content">

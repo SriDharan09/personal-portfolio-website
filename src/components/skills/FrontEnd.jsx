@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 
 const FrontEnd = () => {
+  // Dropdown state handler
   const [isDropDownVisible, setDropDownVisible] = useState(false);
 
+  // Toggle dropdown fn
   const toggleDropDown = () => {
     setDropDownVisible(!isDropDownVisible);
   };
+
   return (
     <div className="skills__content " onClick={toggleDropDown}>
+      {/* Frontend Title and Dropdown */}
       <h3
         className={`skills__title ${isDropDownVisible ? "active__title" : ""}`}
       >
@@ -21,9 +25,14 @@ const FrontEnd = () => {
         </div>
       </h3>
 
+      {/* Frontend Dropdown */}
+
       {isDropDownVisible && (
-        <div className="skills__box">
+        <div
+          className={`skills__box ${isDropDownVisible ? "expand" : "collapse"}`}
+        >
           <div className="skills__group">
+            {/* HTML */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">HTML</h3>
@@ -31,16 +40,17 @@ const FrontEnd = () => {
                   <div
                     className="progressBar"
                     role="progressbar"
-                    style={{ width: "100%" }} // Adjust width according to skill level
+                    style={{ width: "90%" }} // Adjust width according to skill level
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">100%</span>
+                  <span className="progress-percent">90%</span>
                 </div>
               </div>
             </div>
 
+            {/* CSS */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">CSS</h3>
@@ -58,6 +68,7 @@ const FrontEnd = () => {
               </div>
             </div>
 
+            {/* JS */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">JS</h3>
@@ -70,11 +81,12 @@ const FrontEnd = () => {
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">90%</span>
+                  <span className="progress-percent">85%</span>
                 </div>
               </div>
             </div>
 
+            {/* React */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">React.js</h3>
@@ -92,6 +104,7 @@ const FrontEnd = () => {
               </div>
             </div>
 
+            {/* Bootstrap */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">Bootstarp</h3>
@@ -109,6 +122,7 @@ const FrontEnd = () => {
               </div>
             </div>
 
+            {/* jQuery */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">jQuery</h3>

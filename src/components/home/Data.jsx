@@ -4,9 +4,10 @@ import Typed from "typed.js";
 const Data = () => {
   const spanRef = useRef(null);
 
+  // Typed.js for auto typing effect
   useEffect(() => {
     const options = {
-      strings: ["Sridhar", "Programmer", "Developer", "Engineer"],
+      strings: ["Sridhar", "Programmer", "Engineer", "Developer"],
       typeSpeed: 110, // typing speed in milliseconds
       backSpeed: 50, // backspacing speed in milliseconds
       loop: true, // loop the animation infinitely
@@ -33,6 +34,7 @@ const Data = () => {
 
       <a href="#contact" className="button button--flex">
         Say Hi
+        {/* Send Svg */}
         <svg
           class="button__icon"
           xmlns="http://www.w3.org/2000/svg"

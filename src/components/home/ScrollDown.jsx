@@ -5,6 +5,7 @@ const ScrollDown = () => {
   return (
     <div className="home__scroll">
       <a href="#about" className="home__scroll-button button--flex">
+        {/* Mouse Svg */}
         <svg
           width="32px"
           height="32px"
@@ -41,8 +42,8 @@ const ScrollDown = () => {
           ></path>
         </svg>
         <div className="home__scroll-div">
-        <span className="home__scroll-name">Scroll Down</span>
-        <i class="uil uil-angle-down home__scroll-arrow"></i>
+          <span className="home__scroll-name">Scroll Down</span>
+          <i class="uil uil-angle-down home__scroll-arrow"></i>
         </div>
       </a>
     </div>

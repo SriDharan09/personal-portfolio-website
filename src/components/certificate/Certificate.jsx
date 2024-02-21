@@ -7,11 +7,10 @@ import Datas from "./Datas";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 const Certificate = () => {
 
+  // Scroll to reveal Animation
   const triggerRef = useRef(null);
-
   useEffect(() => {
     const tl = gsap.fromTo(
       triggerRef.current,
@@ -34,15 +33,17 @@ const Certificate = () => {
       tl.kill();
     };
   }, []);
+  // 
+
   return (
     <ReactLenis root>
-    <section ref={triggerRef} className="projects section" id="certification">
-      <h2 className="section__title">Certificates</h2>
-      <span className="section__subtitle"> Showcasing my certificates</span>
-      <div className="project__container container">
-        <Datas />
-      </div>
-    </section>
+      <section ref={triggerRef} className="projects section" id="certification">
+        <h2 className="section__title">Certificates</h2>
+        <span className="section__subtitle"> Showcasing my certificates</span>
+        <div className="project__container container">
+          <Datas />
+        </div>
+      </section>
     </ReactLenis>
   );
 };

@@ -1,15 +1,63 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
+import "./logo-animation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 import { motion, useScroll } from "framer-motion";
 
 const Header = ({ toggleDarkMode, darkMode }) => {
+  // const spans = document.querySelectorAll(".word span");
+
+  // onClick Animation for logo
+  const animation = () => {
+    const spans = document.querySelectorAll(".word span");
+
+    spans.forEach((span, idx) => {
+      span.addEventListener("click", (e) => {
+        e.target.classList.add("active");
+      });
+      span.addEventListener("animationend", (e) => {
+        e.target.classList.remove("active");
+      });
+
+      // Initial animation
+      setTimeout(() => {
+        span.classList.add("active");
+      }, 750 * (idx + 1));
+    });
+  };
+
+  // onMount Animation for Logo animation (only once)
+  useEffect(() => {
+    const spans = document.querySelectorAll(".word span");
+
+    spans.forEach((span, idx) => {
+      span.addEventListener("click", (e) => {
+        e.target.classList.add("active");
+      });
+      span.addEventListener("animationend", (e) => {
+        e.target.classList.remove("active");
+      });
+
+      // Initial animation
+      setTimeout(() => {
+        span.classList.add("active");
+      }, 750 * (idx + 1));
+    });
+
+    return () => {
+      spans.forEach((span) => {
+        span.removeEventListener("click", () => {});
+        span.removeEventListener("animationend", () => {});
+      });
+    };
+  }, []);
+
+  // Scroll position track
   const { scrollYProgress } = useScroll();
 
-  // change background
-
+  // Header bottom shadow
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     if (window.scrollY >= 80) header.classList.add("show-header");
@@ -21,8 +69,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
   const [isMobile, setIsMobile] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
 
-  // auto active
-
+  // auto active menu on scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -49,8 +96,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
     };
   }, []);
 
-  //
-
+  // Mobile Menu
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768); // Adjust the screen size threshold as needed
@@ -66,6 +112,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
 
   return (
     <>
+      {/* Progress bar In the top for large screens */}
       {!isMobile && (
         <motion.div
           className="progress-bar"
@@ -77,11 +124,26 @@ const Header = ({ toggleDarkMode, darkMode }) => {
         <nav
           className={`nav container ${isMobile && darkMode ? "dark-mode" : ""}`}
         >
-          <a href="index.html" className="nav__logo">
-            Sridhar
-          </a>
+          {/* Logo Span */}
+          <div className="word nav__logoo">
+            <span>S</span>
+            <span>R</span>
+            <span>I</span>
+            <span>D</span>
+            <span>H</span>
+            <span>A</span>
+            <span>R</span> &nbsp;
+            <span className="dot" onClick={animation}>
+              .
+            </span>
+          </div>
+
+          {/* Nav Menu */}
+
+          {/* Toggle btw upper and lower header */}
           <div className={`nav__menu ${toggle ? "show-menu" : ""}`}>
             <ul className="nav__list grid">
+              {/* Home */}
               <li className="nav__item">
                 <a
                   href="#home"
@@ -97,6 +159,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
                 </a>
               </li>
 
+              {/* About */}
               <li className="nav__item">
                 <a
                   onClick={() => setActiveNav("#about")}
@@ -112,6 +175,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
                 </a>
               </li>
 
+              {/* Skills */}
               <li className="nav__item">
                 <a
                   href="#skills"
@@ -127,6 +191,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
                 </a>
               </li>
 
+              {/* Qualification */}
               <li className="nav__item">
                 <a
                   href="#qualification"
@@ -142,6 +207,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
                 </a>
               </li>
 
+              {/* Projects */}
               <li className="nav__item">
                 <a
                   href="#projects"
@@ -157,6 +223,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
                 </a>
               </li>
 
+              {/* Certifications */}
               <li className="nav__item">
                 <a
                   href="#certification"
@@ -172,6 +239,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
                 </a>
               </li>
 
+              {/* Contact */}
               <li className="nav__item">
                 <a
                   href="#contact"
@@ -188,10 +256,13 @@ const Header = ({ toggleDarkMode, darkMode }) => {
               </li>
             </ul>
 
+            {/* Close icon  */}
             <i
               className="uil uil-times nav__close"
               onClick={() => showMenu(!toggle)}
             ></i>
+
+            {/*  Dark mode button */}
           </div>
           <input
             type="checkbox"
@@ -204,14 +275,18 @@ const Header = ({ toggleDarkMode, darkMode }) => {
             htmlFor="dark-mode-toggle checkbox"
             className="dark-mode-label checkbox-label"
           >
+            {/* Icon for dark mode and light mode */}
             <FontAwesomeIcon icon={darkMode ? faMoon : faSun} />
             <span className="ball"></span>
           </label>
 
+          {/* Mobile toggle */}
           <div className="nav__toggle" onClick={() => showMenu(!toggle)}>
             <i class="uis uis-list-ui-alt"></i>
           </div>
         </nav>
+
+        {/* Progress bar in the bottom for small Screen  */}
         {isMobile && (
           <motion.div
             className="progress-bar"

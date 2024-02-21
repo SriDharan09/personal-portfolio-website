@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 
 const Programming = () => {
+  // Dropdown state handler
   const [isDropDownVisible, setDropDownVisible] = useState(false);
 
+  // Toggle dropdown fn
   const toggleDropDown = () => {
     setDropDownVisible(!isDropDownVisible);
   };
   return (
     <div className="skills__content">
+      {/* Programming Title and Dropdown */}
       <h3
         className={`skills__title ${isDropDownVisible ? "active__title" : ""}`}
         onClick={toggleDropDown}
@@ -22,9 +25,13 @@ const Programming = () => {
         </div>
       </h3>
 
+      {/* Programming Dropdown */}
       {isDropDownVisible && (
-        <div className="skills__box">
+        <div
+          className={`skills__box ${isDropDownVisible ? "expand" : "collapse"}`}
+        >
           <div className="skills__group">
+            {/* C */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">C</h3>
@@ -42,6 +49,7 @@ const Programming = () => {
               </div>
             </div>
 
+            {/* C++ */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">C++</h3>
@@ -59,6 +67,7 @@ const Programming = () => {
               </div>
             </div>
 
+            {/* Python */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">Python</h3>
@@ -66,12 +75,12 @@ const Programming = () => {
                   <div
                     className="progressBar"
                     role="progressbar"
-                    style={{ width: "90%" }} // Adjust width according to skill level
+                    style={{ width: "80%" }} // Adjust width according to skill level
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">90%</span>
+                  <span className="progress-percent">80%</span>
                 </div>{" "}
               </div>
             </div>

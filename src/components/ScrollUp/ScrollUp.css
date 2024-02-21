@@ -14,6 +14,7 @@
   background-color: var(--title-color-dark);
   animation: up 0.8s ease-in-out infinite;
 }
+/* Scroll Up pulse animation */
 @keyframes up {
   0% {
     transform: translateY(0);

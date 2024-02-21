@@ -5,10 +5,8 @@
 
 .certificate__image {
   width: auto;
-  max-width: 80%; /* Adjust as needed */
+  max-width: 80%;
   height: auto;
   border-radius: 1rem;
   margin-bottom: var(--mb-1);
 }
-
-

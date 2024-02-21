@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 
 const BackEnd = () => {
+  // Toggle dropdown fn
   const [isDropDownVisible, setDropDownVisible] = useState(false);
 
+  // Dropdown state handler
   const toggleDropDown = () => {
     setDropDownVisible(!isDropDownVisible);
   };
+
   return (
     <div className="skills__content" onClick={toggleDropDown}>
+      {/* Backend Title and Dropdown */}
       <h3
         className={`skills__title ${isDropDownVisible ? "active__title" : ""}`}
       >
@@ -21,9 +25,13 @@ const BackEnd = () => {
         </div>
       </h3>
 
+      {/* Backend Dropdown */}
       {isDropDownVisible && (
-        <div className="skills__box">
+        <div
+          className={`skills__box ${isDropDownVisible ? "expand" : "collapse"}`}
+        >
           <div className="skills__group">
+            {/* Node */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">Node.js</h3>
@@ -41,6 +49,7 @@ const BackEnd = () => {
               </div>
             </div>
 
+            {/* Express */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">Express.js</h3>
@@ -58,6 +67,7 @@ const BackEnd = () => {
               </div>
             </div>
 
+            {/* Java */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">Java</h3>
@@ -75,6 +85,7 @@ const BackEnd = () => {
               </div>
             </div>
 
+            {/* Postman */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">Postman</h3>
@@ -92,6 +103,7 @@ const BackEnd = () => {
               </div>
             </div>
 
+            {/* Spring */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">Spring</h3>
@@ -109,6 +121,7 @@ const BackEnd = () => {
               </div>
             </div>
 
+            {/* Git */}
             <div className="skills__data">
               <div>
                 <h3 className="skills__name">Git</h3>

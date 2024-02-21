@@ -11,8 +11,9 @@ import Programming from "./Programming";
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
-  const triggerRef = useRef(null);
 
+  // Scroll to reveal Animation
+  const triggerRef = useRef(null);
   useEffect(() => {
     const tl = gsap.fromTo(
       triggerRef.current,
@@ -35,6 +36,8 @@ const Skills = () => {
       tl.kill();
     };
   }, []);
+  // Scroll animation end
+  
   return (
     <ReactLenis root>
       <section ref={triggerRef} className="skills section" id="skills">

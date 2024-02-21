@@ -7,6 +7,7 @@ import certificate1 from "../../local_assets/Udemy_Certificate.jpg";
 import certificate2 from "../../local_assets/Python Certificate Udemy.jpg";
 
 const Datas = () => {
+  // Settings for Auto Play Carousel
   const settings = {
     // dots: true,
     infinite: true,
@@ -19,6 +20,8 @@ const Datas = () => {
   return (
     <div className="carousel-container">
       <Slider {...settings}>
+        {/* Slide 1 */}
+
         <div className="carousel-slide">
           <img
             src={certificate1}
@@ -26,6 +29,8 @@ const Datas = () => {
             alt="Project 1"
           />
         </div>
+
+        {/* Slide 2 */}
         <div className="carousel-slide">
           <img
             src={certificate2}

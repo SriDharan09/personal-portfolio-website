@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container container">
         <h1 className="footer__title">Sridhar</h1>
-
+        {/* Footer Link */}
         <ul className="footer__list">
           <li>
             <a href="#about" className="footer__link">
@@ -25,6 +25,7 @@ const Footer = () => {
           </li>
         </ul>
 
+        {/* Footer Social Links */}
         <div className="footer__social">
           <a
             href="https://www.instagram.com/s.r.i_dhar?igsh=b216djVyZ3M5djZu"
@@ -59,6 +60,8 @@ const Footer = () => {
             <i class="bx bxl-facebook"></i>
           </a>
         </div>
+
+        {/* Footer Copy */}
         <span className="footer__copy">
           {new Date().getFullYear()} &#169; Sridhar. All rights reserved.
         </span>

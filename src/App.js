@@ -12,8 +12,11 @@ import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 
 function App() {
+
+  // Dark Mode State Handler
   const [darkMode, setDarkMode] = useState(false);
 
+  // Dark Mode Toggle
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
