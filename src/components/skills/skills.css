@@ -61,7 +61,10 @@
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   line-height: 18px;
+  /* display: flex;
+  justify-content: space-between; */
 }
+
 .skills__level {
   font-size: var(--tiny-font-size);
   display: block;
@@ -145,6 +148,10 @@
 
 .skills__box.collapse {
   animation: collapseDropdown 1s ease-in-out reverse;
+}
+.skill__logo {
+  font-size: 1.35rem;
+  margin-left: 0.4rem;
 }
 
 @keyframes expandDropdown {

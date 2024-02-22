@@ -34,7 +34,10 @@ const BackEnd = () => {
             {/* Node */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">Node.js</h3>
+                <h3 className="skills__name">
+                  Node.js
+                  <i class="bx bxl-nodejs skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -52,17 +55,19 @@ const BackEnd = () => {
             {/* Express */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">Express.js</h3>
+                <h3 className="skills__name">
+                  Express.js <i class="bx bxl-edge  skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
                     role="progressbar"
-                    style={{ width: "70%" }} // Adjust width according to skill level
+                    style={{ width: "65%" }} // Adjust width according to skill level
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                  <span className="progress-percent">70%</span>
+                  <span className="progress-percent">65%</span>
                 </div>
               </div>
             </div>
@@ -70,7 +75,10 @@ const BackEnd = () => {
             {/* Java */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">Java</h3>
+                <h3 className="skills__name">
+                  Java
+                  <i class="bx bxl-java  skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -88,7 +96,10 @@ const BackEnd = () => {
             {/* Postman */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">Postman</h3>
+                <h3 className="skills__name">
+                  Postman
+                  <i class="bx bxl-pinterest  skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -106,7 +117,9 @@ const BackEnd = () => {
             {/* Spring */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">Spring</h3>
+                <h3 className="skills__name">
+                  Spring <i class="bx bxl-spring-boot  skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -124,7 +137,10 @@ const BackEnd = () => {
             {/* Git */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">Git</h3>
+                <h3 className="skills__name">
+                  Git
+                  <i class="bx bxl-git  skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"

@@ -2,7 +2,16 @@ import React from "react";
 
 const Social = () => {
   return (
-    <div className="home__social">
+    <div
+      data-aos="flip-left"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="home__social"
+    >
       {/* Social icons */}
 
       {/* Instagram */}

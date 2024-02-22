@@ -21,7 +21,16 @@ const Data = () => {
   }, []);
 
   return (
-    <div className="home__data">
+    <div
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="home__data"
+    >
       <h1 className="home__title">Hi, There</h1>
       <h3 className="home__subtitle">
         I'm <span className="auto__type" ref={spanRef}></span>

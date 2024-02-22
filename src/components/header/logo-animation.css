@@ -116,14 +116,14 @@
 @keyframes toplong {
   10%,
   40% {
-    transform: translateY(-7vh) rotate(10deg);
+    transform: translateY(-6vh) rotate(10deg);
   }
   70% {
     transform: rotate(180deg);
   }
 
   90% {
-    transform: translateY(7vh) rotate(10deg);
+    transform: translateY(6vh) rotate(10deg);
   }
 }
 

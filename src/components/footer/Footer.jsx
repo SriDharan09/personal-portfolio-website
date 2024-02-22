@@ -3,7 +3,17 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer
+      data-aos="zoom-in-up"
+      data-aos-offset="-50"
+      // data-aos-delay="50"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-out"
+      // data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="footer"
+    >
       <div className="footer__container container">
         <h1 className="footer__title">Sridhar</h1>
         {/* Footer Link */}

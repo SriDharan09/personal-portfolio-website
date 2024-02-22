@@ -75,6 +75,7 @@
   box-sizing: border-box;
 }
 
+
 .dark-mode-toggle {
   background: var(--body-color);
   border: none;

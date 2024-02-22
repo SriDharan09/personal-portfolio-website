@@ -3,6 +3,7 @@ import "./header.css";
 import "./logo-animation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import cv from "../../local_assets/cv.pdf";
 
 import { motion, useScroll } from "framer-motion";
 
@@ -218,7 +219,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
                   }
                   onClick={() => setActiveNav("#projects")}
                 >
-                  <i className="uil uil-scenery nav__icon"></i>
+                  <i class="uil uil-microscope nav__icon"></i>
                   Projects
                 </a>
               </li>
@@ -254,6 +255,15 @@ const Header = ({ toggleDarkMode, darkMode }) => {
                   Contact
                 </a>
               </li>
+
+              {isMobile && (
+                <li className="nav__item">
+                  <a href={cv} download="" className="nav__link">
+                    <i class="uil uil-file-download nav__icon"></i>
+                    Download CV
+                  </a>
+                </li>
+              )}
             </ul>
 
             {/* Close icon  */}

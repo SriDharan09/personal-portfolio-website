@@ -34,7 +34,9 @@ const Programming = () => {
             {/* C */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">C</h3>
+                <h3 className="skills__name">
+                  C <i class="bx bxs-copyright skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -52,7 +54,10 @@ const Programming = () => {
             {/* C++ */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">C++</h3>
+                <h3 className="skills__name">
+                  C++ <i class="bx bxl-c-plus-plus skill__logo"></i>
+                </h3>
+
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -70,7 +75,9 @@ const Programming = () => {
             {/* Python */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">Python</h3>
+                <h3 className="skills__name">
+                  Python <i class="bx bxl-python skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"

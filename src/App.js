@@ -11,8 +11,12 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 
-function App() {
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
+function App() {
   // Dark Mode State Handler
   const [darkMode, setDarkMode] = useState(false);
 

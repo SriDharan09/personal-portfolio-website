@@ -35,7 +35,9 @@ const FrontEnd = () => {
             {/* HTML */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">HTML</h3>
+                <h3 className="skills__name">
+                  HTML <i class="bx bxl-html5 skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -53,7 +55,9 @@ const FrontEnd = () => {
             {/* CSS */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">CSS</h3>
+                <h3 className="skills__name">
+                  CSS <i class="bx bxl-css3 skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -71,7 +75,9 @@ const FrontEnd = () => {
             {/* JS */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">JS</h3>
+                <h3 className="skills__name">
+                  JS <i class="bx bxl-javascript skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -89,7 +95,9 @@ const FrontEnd = () => {
             {/* React */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">React.js</h3>
+                <h3 className="skills__name">
+                  React.js <i class="bx bxl-react skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -107,7 +115,9 @@ const FrontEnd = () => {
             {/* Bootstrap */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">Bootstarp</h3>
+                <h3 className="skills__name">
+                  Bootstarp <i class="bx bxl-bootstrap skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
@@ -125,7 +135,9 @@ const FrontEnd = () => {
             {/* jQuery */}
             <div className="skills__data">
               <div>
-                <h3 className="skills__name">jQuery</h3>
+                <h3 className="skills__name">
+                  jQuery <i class="bx bxl-jquery skill__logo"></i>
+                </h3>
                 <div className="progress">
                   <div
                     className="progressBar"
