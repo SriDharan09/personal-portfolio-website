@@ -10,9 +10,10 @@ const BackEnd = () => {
   };
 
   return (
-    <div className="skills__content" onClick={toggleDropDown}>
+    <div className="skills__content">
       {/* Backend Title and Dropdown */}
       <h3
+        onClick={toggleDropDown}
         className={`skills__title ${isDropDownVisible ? "active__title" : ""}`}
       >
         <i class="bx bx-server"></i>Backend

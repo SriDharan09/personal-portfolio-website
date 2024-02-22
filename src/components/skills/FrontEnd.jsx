@@ -10,9 +10,10 @@ const FrontEnd = () => {
   };
 
   return (
-    <div className="skills__content " onClick={toggleDropDown}>
+    <div className="skills__content ">
       {/* Frontend Title and Dropdown */}
       <h3
+        onClick={toggleDropDown}
         className={`skills__title ${isDropDownVisible ? "active__title" : ""}`}
       >
         <i class="bx bx-code-block"></i> Frontend
